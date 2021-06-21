@@ -7,10 +7,10 @@
 		<form action="/complete" method="POST">
 			<label>
 				{{#if completed}}
-					<input type="checkbox" checked />
+					<input type="checkbox" checked name="completed" />
 					<span class="completed">{{title}}</span>
 				{{else}}
-					<input type="checkbox" />
+					<input type="checkbox" name="completed" />
 					<span>{{title}}</span>
 				{{/if}}
 
